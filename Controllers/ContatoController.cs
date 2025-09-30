@@ -24,7 +24,7 @@ namespace ModuloAPI.Controllers
         {
             _context.Add(contato);
             _context.SaveChanges();
-            return Ok(contato);
+            return CreatedAtAction(nameof(GetById), new { id = contato.Id }, contato);
         }
 
         [HttpGet("{id}")]
