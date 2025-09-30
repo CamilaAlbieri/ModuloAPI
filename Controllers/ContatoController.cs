@@ -38,6 +38,13 @@ namespace ModuloAPI.Controllers
             return Ok(contato);
         }
 
+        [HttpGet("ObterPorNome/{nome}")]
+        public IActionResult ObterPorNome(string nome)
+        {
+            var contatos = _context.Contatos.Where(c => c.Nome.Contains(nome)).ToList();
+            return Ok(contatos);
+        }
+
         [HttpPut("{id}")]
         public IActionResult Update(int id, Contato contato)
         {
