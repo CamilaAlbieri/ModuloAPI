@@ -67,6 +67,7 @@ Projeto simples desenvolvido para **estudos**, com foco em praticar **CRUD** usa
 ### ✏️ Atualizar
 ### ❌ Deletar
 
+---
 ## 🎯 Objetivo
 
 O objetivo principal foi praticar a construção de uma API com Entity Framework, entendendo cada etapa de configuração, mapeamento, migrations e implementação de um CRUD completo.
