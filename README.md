@@ -33,22 +33,41 @@ Projeto simples desenvolvido para **estudos**, com foco em praticar **CRUD** usa
 
 ## 🔧 Como executar o projeto
 1. Clone este repositório:
+   ```bash
    git clone https://github.com/seu-usuario/nome-do-repo.git
    
 3. Restaure os pacotes:
+   ```bash
    dotnet restore
 
 4. Configure a connection string no appsettings.json:
-   "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=CrudDb;User Id=seu-usuario;Password=sua-senha;"
+   ```bash
+    "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=CrudDb;User Id=seu-usuario;Password=sua-senha;"
    }
 
 5. Execute as migrations:
+   ```bash
    dotnet-ef migrations add CriacaoTabelaContato
    dotnet ef database update
 
 6. Rode a aplicação:
+    ```bash
    dotnet run
 
 7. A API estará disponível em:
+    ```bash
    https://localhost:5001
+
+## 📌 Endpoints principais
+
+### ➕ Criar
+### 🔍 Buscar por ID
+### 🔎 Buscar por Nome
+### ✏️ Atualizar
+### ❌ Deletar
+
+## 🎯 Objetivo
+
+O objetivo principal foi praticar a construção de uma API com Entity Framework, entendendo cada etapa de configuração, mapeamento, migrations e implementação de um CRUD completo.
+
